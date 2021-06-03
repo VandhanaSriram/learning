@@ -10,7 +10,7 @@
 This is Home Page
 <br>
 <a href="<%= request.getContextPath() %>/Controller?page=login">Login</a><br>
-<a href="Signuo.jsp">Sign Up</a><br>
-<a href="About.jsp">About</a>
+<a href="<%= request.getContextPath() %>/Controller?page=signup">Sign Up</a><br>
+<a href="<%= request.getContextPath() %>/Controller?page=about">About</a><br>
 </body>
 </html>
