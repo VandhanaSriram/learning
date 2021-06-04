@@ -8,8 +8,8 @@
 </head>
 <body>
 <form action="<%= request.getContextPath() %>/Controller" method="post">
-	Full name: <input type="text" name="name"><br>
-	Gender: <input type="radio" name="gender" value="male">Male
+	Full name: <input type="text" name="name" required><br>
+	Gender: <input type="radio" name="gender" value="male" checked="checked">Male
 			<input type="radio" name="gender" value="female">Female<br>
 	Languages known: <input type="checkbox" name="lang" value="english">English
 					 <input type="checkbox" name="lang" value="hindi">Hindi

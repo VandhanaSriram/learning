@@ -30,15 +30,15 @@ public class Controller extends HttpServlet {
 		response.getWriter().print("Name: " +request.getParameter("name") +"<br>");
 		response.getWriter().print("Gender: " +request.getParameter("gender") +"<br>");
 		String[] languages = request.getParameterValues("lang");
+		response.getWriter().print("Languages: ");
 		if(languages !=null) {
-			response.getWriter().print("Languages:");
 			for(int i=0; i<languages.length; i++) {
 				response.getWriter().print("<br>");
 				response.getWriter().print(languages[i]);
 			}
 		}
 		else {
-			response.getWriter().print("No languages selected" +"<br>");
+			response.getWriter().print("No languages selected");
 		}
 		response.getWriter().print("<br>");
 		response.getWriter().print("Country: " +request.getParameter("country"));
@@ -52,15 +52,15 @@ public class Controller extends HttpServlet {
 		response.getWriter().print("Name: " +request.getParameter("name") +"<br>");
 		response.getWriter().print("Gender: " +request.getParameter("gender") +"<br>");
 		String[] languages = request.getParameterValues("lang");
+		response.getWriter().print("Languages: ");
 		if(languages !=null) {
-			response.getWriter().print("Languages:");
 			for(int i=0; i<languages.length; i++) {
 				response.getWriter().print("<br>");
 				response.getWriter().print(languages[i]);
 			}
 		}
 		else {
-			response.getWriter().print("No languages selected" +"<br>");
+			response.getWriter().print("No languages selected");
 		}
 		response.getWriter().print("<br>");
 		response.getWriter().print("Country: " +request.getParameter("country"));
